@@ -21,7 +21,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "TerraformLabRG-Final"
+  name     = "TerraformLabRG"
   location = "East US"
 }
 
@@ -30,7 +30,7 @@ module "finaltestmodule" {
   version = "1.0.0"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
-  name                = "pb87sdf89mn"
+  name                = "pb87sdf89mn8j"
   environment          = "DEV"
   # insert required variables here
 }
